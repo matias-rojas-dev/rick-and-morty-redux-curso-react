@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route, Switch} from 'react-router-dom',
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import '../assets/styles/App.scss';
 import Characters from '../containers/Characters';
 import Favorites from '../containers/Favorites';
