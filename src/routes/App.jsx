@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 
 const App = () => (
     <BrowserRouter>
-        <Layout>
+        <Layout> {/*Dentro del componente Layout tendremos dos rutas que serán hacia los componentes Favorites y Characters*/}
             <Switch>
                 <Route exact path='/favorites' component = { Favorites } />
                 <Route exact path='/' component = { Characters } /> 

@@ -10,7 +10,7 @@ import Header from './Header';
 const Layout = ({children}) => (
     <div className="layout">
         <Header />
-            {children /* componente que puede ser Characters o Favorites} */ } 
+            {children /* componente que puede ser Characters o Favorites} DEFINICIÓN DINÁMICA*/ } 
         <Footer />
     </div>
 );

@@ -41,7 +41,7 @@ const Header = (props) => {
                             sectionActive === 'Favorites' ?  'active' : ''
                         }`}
                     >
-                        <Link to="/" >Favorites</Link>
+                        <Link to="/favorites" >Favorites</Link>
 
                     </li>
 
@@ -53,7 +53,7 @@ const Header = (props) => {
 };
 
 const mapStateToProps = (state) => {
-    // recibe la difinición inicial del state
+    // recibe la difinición inicial del state y lo extrae
     return {
         sectionActive: state.sectionActive
     }
