@@ -8,21 +8,21 @@ const
                     //1 copia inicial del state
                     ...state,
                     //2 propiedad o contenido del store a modificar
-                    favoriteCharacter: [...state.favoriteCharacter, action.payload] //action.payload : contenido de datos que modifican el valor
+                    favoriteCharacters: [...state.favoriteCharacters, action.payload], //action.payload : contenido de datos que modifican el valor
                 };
 
             case 'DELETE_FAVORITE':
                 return {
                     ...state,
-                    favoriteCharacter: state.favoriteCharacter.filter(
+                    favoriteCharacters: state.favoriteCharacters.filter(
                         (items) => items.data.id !== action.payload, //tiene que ser distinto al items.data.id
-                    )
+                    ),
                 };
 
             case 'SET_SECTION':
                 return {
                     ...state,
-                    sectionActive: action.payload
+                    sectionActive: action.payload,
                 };
 
             default:
