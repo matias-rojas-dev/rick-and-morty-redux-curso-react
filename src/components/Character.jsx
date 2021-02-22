@@ -89,7 +89,7 @@ const Character = (props) => { // nota* cuando solo pasemos un parámetro SIEMPR
             </div>
 
             
-                <Modal idOpen={modal} onCloss={handleCloseModal}>
+                <Modal isOpen={modal} onClose={handleCloseModal}>
                     <CharacterDetail data={data} />
                 </Modal>
             
