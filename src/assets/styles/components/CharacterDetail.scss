@@ -1,23 +1,22 @@
 @import '../App.scss';
-
 .characterDetail {
-  @include flexCenCen;
-  border-radius: 15px;
-  overflow: hidden;
+    @include flexCenCen;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .characterDetail__container {
-  width: 400px;
-  height: 300px;
-  padding: 0 35px;
-  background-color: $danger-color;
+    width: 400px;
+    height: 300px;
+    padding: 0 35px;
+    background-color: $danger-color;
 }
 
 .characterDetail__item {
-  margin: 15px 0;
+    margin: 12px 0;
 }
 
 .characterDetail__item-type {
-  color: $success-color;
-  font-weight: bolder;
+    color: $success-color;
+    font-weight: bolder;
 }
