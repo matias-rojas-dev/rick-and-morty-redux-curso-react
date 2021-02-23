@@ -7,6 +7,9 @@ import propTypes from 'prop-types';
 import { setFavorite, deleteFavorite } from '../actions';
 import { connect } from 'react-redux';
 
+// custom hooks
+import useModal from '../custom-hooks/useModal';
+
 // utils
 import '../assets/styles/components/Character.scss';
 import { ReactComponent as SVGStar } from '../assets/static/icons/star.svg';
@@ -17,8 +20,11 @@ import Modal from './Modal'; //desplegará un cuadro
 
 const Character = (props) => { // nota* cuando solo pasemos un parámetro SIEMPRE dejar sin {}
 
+    // useModal destructuring
+    const {modal, handleCloseModal, handleOpenModal} = useModal(); 
+
     // Hook -> useState
-    const [modal, setModal] = useState(false);
+    // const [modal, setModal] = useState(false);
     const [favorite, setFavorite] = useState(false);
 
     // destructuring para poder trabajar con las funciones declaradas
@@ -26,14 +32,14 @@ const Character = (props) => { // nota* cuando solo pasemos un parámetro SIEMPR
     const { id, image, name, status, species, gender } = data;
 
     // functions
-    const handleCloseModal = () => {
+    /*const handleCloseModal = () => {
         setModal(false);
     };
 
     const handleOpenModal = () => {
         setModal(true)
     };
-
+    */
     const handleSetFavorite = () => {
         props.setFavorite({ data });
         setFavorite(true)

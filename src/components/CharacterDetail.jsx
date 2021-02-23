@@ -58,7 +58,7 @@ const CharacterDetail = (props) => {
                     <span className='characterDetail__item-type'>
                         Url: 
                     </span>
-                    <a href='https://rickandmortyapi.com/api/character/3'>{url}</a>
+                    <a href='https://rickandmortyapi.com/api/character/3'> {url}</a>
                 </p>
 
                 
