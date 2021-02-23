@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 
-import axios from 'axios';
+import useGetCharacters from '../custom-hooks/useGetCharacters';
 
 import '../assets/styles/components/CharacterList.scss';
 
@@ -9,9 +9,16 @@ import Error from './Error';
 import Loader from './Loader';
 
 const CharacterList = () => {
-    const [ characters, setCharacters ] = useState([]);
+
+    // use useGetCharacters destructuring
+    const {characters, loading, error, getCharacters} = useGetCharacters();
+   
+    /*
+     const [ characters, setCharacters ] = useState([]);
     const [ loading, setLoading ] = useState(true);
     const [ error, setError ] = useState(false);
+
+    
 
     async function getCharacters(){
         try{
@@ -29,7 +36,7 @@ const CharacterList = () => {
             setError(error);
         }
     }; // end async function
-
+    */
     useEffect( () => {
         getCharacters()
     }, []);
