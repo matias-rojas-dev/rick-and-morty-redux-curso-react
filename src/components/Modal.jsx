@@ -3,7 +3,7 @@ import {createPortal} from 'react-dom';
 
 // utils
 import '../assets/styles/components/Modal.scss';
-import {ReactComponent as SVGClose} from '../assets/static/icons/close.svg';
+import SVGClose from '../assets/static/icons/close.svg';
 
 
 const Modal = (props) => (

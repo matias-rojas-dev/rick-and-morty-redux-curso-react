@@ -12,7 +12,7 @@ import useModal from '../custom-hooks/useModal';
 
 // utils
 import '../assets/styles/components/Character.scss';
-import { ReactComponent as SVGStar } from '../assets/static/icons/star.svg';
+import SVGStar from '../assets/static/icons/star.svg';
 
 // components
 import CharacterDetail from './CharacterDetail'; // desplegará información dentro del Modal
